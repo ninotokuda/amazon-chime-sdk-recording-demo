@@ -89,7 +89,7 @@ exports.handler = function(event, context, callback) {
     callback(null, response);
 };
 
-function startRecording(event, context, callback, meetingUrl, soptId) {
+function startRecording(event, context, callback, meetingUrl, spotId) {
     let ecsRunTaskParams = {
         cluster: ecsClusterArn,
         launchType: "EC2",
