@@ -43,7 +43,7 @@ exports.handler = function(event, context, callback) {
                 console.log("Meeting URL: " + event.queryStringParameters.meetingURL);
                 meetingURL = decodeURIComponent(event.queryStringParameters.meetingURL);
                 spotId = event.queryStringParameters.spotId;
-                return startRecording(event, context, callback, meetingURL. spotId);
+                return startRecording(event, context, callback, meetingURL, spotId);
             } else {
                 responseBody = {
                     message: "Missing parameter: meetingURL",
